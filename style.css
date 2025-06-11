@@ -26,7 +26,7 @@ header {
   background-color: var(--violeta-base);
   padding: 10px 20px;
   position: relative;
-  flex-wrap: wrap;
+  
 }
 
 header img {
@@ -44,7 +44,7 @@ header img {
 
 .nav-links {
   display: flex;
-  gap: 16px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
