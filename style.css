@@ -458,7 +458,7 @@ footer {
     background-color: var(--violeta-base);
     text-align: center;
     color: var(--branco-base);
-    text-shadow: 1px 2px 1px var(--azul-base);
+    text-shadow: 1px 2px 1px var(--preto-base);
     text-transform: uppercase;
     font-family: 'Lemon Tuesday', sans-serif;
 }
