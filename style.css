@@ -462,6 +462,40 @@ footer {
     text-transform: uppercase;
     font-family: 'Lemon Tuesday', sans-serif;
 }
+.btn-whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}
+.btn-whatsapp img {
+  max-width: 40px;
+  transition: 0.4s;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
+}
+
+.btn-whatsapp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 220px;
+  top: 8px;
+  left: -224px;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: var(--violeta-base);
+  color: #FFF;
+  opacity: 0;
+  transition: opacity 0.4s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
 
 @media screen and (max-width: 1020px){
     
