@@ -462,6 +462,12 @@ footer {
     text-transform: uppercase;
     font-family: 'Lemon Tuesday', sans-serif;
 }
+footer img {
+    max-width: 86px;
+    margin: 0;
+    padding: 0;
+    filter:  drop-shadow(2px 5px 10px var(--rosa-base));
+}
 .btn-whatsapp {
   position: fixed;
   bottom: 0;
@@ -596,8 +602,20 @@ footer {
         flex-direction: column-reverse;
         gap: 1.5rem;
     }
+    .contato-display .cta-button{
+        font-size: 1.4rem;
+        max-width: 400px;
+        width: 90%;
+        margin: 0 auto;
+    }
     footer {
         max-width: 100%;
         flex-direction: column;
+        padding: 15px;
+    }
+    footer img {
+        max-width: 86px;
+        margin: 0;
+        padding: 0;
     }
 }
