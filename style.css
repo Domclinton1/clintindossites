@@ -468,19 +468,25 @@ footer {
     .hero {
         display: flex;
         flex-direction: column;
+        border-bottom: 13px solid var(--violeta-base);
+        padding-bottom: 0;
     }
     .hero-text {
         max-width: 100%;
         justify-content: center;
-        gap: 1.2rem;
+        gap: 1rem;
         text-align: center;
     }
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 1.55rem;
     
     }
     .hero-text p {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
+    }
+    .hero-img {
+        max-width: 300px;
+        margin: 0 auto;
     }
     .hero-text .cta-button {
         font-size: 1.5rem;
@@ -527,9 +533,12 @@ footer {
         font-size: 1.4rem;
         line-height: 1.1;
     }
+    .sobre-img {
+        max-width: 100%;
+    }
 
     .portifolio {
-        gap: 1.3rem;
+        max-width: 100%;
     }
     .portifolio-display {
         gap: 1.5rem;
