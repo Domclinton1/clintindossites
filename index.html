@@ -1,328 +1,656 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clintin dos Sites: Desenvolvedor Web e Gestor de Trafego Pago</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.cdnfonts.com/css/lemon-tuesday" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO BÁSICO -->
+    <title>
+      Clintin dos Sites | Criação de Sites Profissionais e Landing Pages de Alta
+      Conversão
+    </title>
+    <meta
+      name="description"
+      content="Crie seu site profissional ou landing page com a Clintin dos Sites. Design moderno, rápido e otimizado para conversão. Ideal para agências, gestores de tráfego e prestadores de serviço."
+    />
+    <meta
+      name="keywords"
+      content="criação de sites, landing pages, desenvolvimento web, site para agências, gestor de tráfego, site profissional, design responsivo, clintin dos sites"
+    />
+    <meta name="author" content="Clintin dos Sites" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO AVANÇADO -->
+    <link rel="canonical" href="https://clintindossites.vercel.app/" />
+    <meta
+      property="og:title"
+      content="Clintin dos Sites | Sites e Landing Pages Profissionais"
+    />
+    <meta
+      property="og:description"
+      content="A Clintin dos Sites desenvolve sites e landing pages modernas e otimizadas para gerar resultados. Ideal para agências e gestores de tráfego."
+    />
+    <meta
+      property="og:image"
+      content="https://clintindossites.vercel.app/imagens/preview.jpg"
+    />
+    <meta property="og:url" content="https://clintindossites.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Clintin dos Sites | Criação de Sites Profissionais"
+    />
+    <meta
+      name="twitter:description"
+      content="Transforme seu negócio com sites modernos e de alta conversão."
+    />
+    <meta
+      name="twitter:image"
+      content="https://clintindossites.vercel.app/imagens/preview.jpg"
+    />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="./assets/images/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/lemon-tuesday"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-   <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1253175769645630');
-    fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1253175769645630");
+      fbq("track", "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1253175769645630&ev=PageView&noscript=1"
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1253175769645630&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Meta Pixel Code -->    
-     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P5VRB3EH9"></script>
+    <!-- End Meta Pixel Code -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3P5VRB3EH9"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-3P5VRB3EH9');
-    </script>   
-    </head>
-<body>
+      gtag("config", "G-3P5VRB3EH9");
+    </script>
+  </head>
+  <body>
     <header>
-        <a href="#" class="logo">
-            <img src="./assets/images/logo-clintin-dos-sites.png" alt="Logomarca de Clintin dos Sites">
-        </a>
+      <a href="#" class="logo">
+        <img
+          src="./assets/images/logo-clintin-dos-sites.png"
+          alt="Logomarca de Clintin dos Sites"
+        />
+      </a>
 
-        <button class="menu-toggle" aria-label="Abrir menu">
-            &#9776;
-        </button>
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
 
-        <nav class="nav-links">
-            <a href="#portifolio">Portifolio</a>
-            <a href="#services">Serviços</a>
-            <a href="#sobre">Sobre</a>
-            <a href="./pages/landingpage.html">Landingpage</a>
-            <a href="./pages/siteinstitucional.html">Site Institucional</a>
-            <a href="./pages/sistemasaas.html">Sistema Saas</a>
-            <a href="./pages/trafegopago.html">Tráfego Pago</a>
-            <a href="./pages/manutencaopc.html">Manutenção em Computadores</a>
-        </nav>
+      <nav class="nav-links">
+        <a href="#portifolio">Portifolio</a>
+        <a href="#services">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="./pages/landingpage.html">Landingpage</a>
+        <a href="./pages/siteinstitucional.html">Site Institucional</a>
+        <a href="./pages/sistemasaas.html">Sistema Saas</a>
+        <a href="./pages/trafegopago.html">Tráfego Pago</a>
+        <a href="./pages/manutencaopc.html">Manutenção em Computadores</a>
+      </nav>
     </header>
 
-
     <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h1 data-aos="fade-down" data-aos-duration="1000">Seu empreendimento merece um posicionamento digital</h1>
-                <p data-aos="fade-up" data-aos-duration="1200">Desenvolvimento Web e Gestão de Tráfego Pago</p>
-                <a href="https://wa.me/5531994038782" data-aos="zoom-in" data-aos-duration="1000" target="_blank" class="cta-button">
-                    <strong>Fale no WhatsApp</strong>
-                    <img src="./assets/icons/whatsapp.svg" alt="Icone do WhatsApp">
-                </a>
-                
+      <section class="hero">
+        <div class="hero-text">
+          <h1 data-aos="fade-down" data-aos-duration="1000">
+            Seu empreendimento merece um posicionamento digital
+          </h1>
+          <p data-aos="fade-up" data-aos-duration="1200">
+            Desenvolvimento Web e Gestão de Tráfego Pago
+          </p>
+          <a
+            href="https://wa.me/5531994038782"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            target="_blank"
+            class="cta-button"
+          >
+            <strong>Fale no WhatsApp</strong>
+            <img src="./assets/icons/whatsapp.svg" alt="Icone do WhatsApp" />
+          </a>
+        </div>
+        <img
+          src="./assets/images/clintin-dos-sites.png"
+          data-aos="fade-up"
+          data-aos-duration="1400"
+          alt="Imagem de Clintin dos Sites"
+          class="hero-img"
+        />
+      </section>
+
+      <section class="services" id="services">
+        <h2 data-aos="fade-down" data-aos-duration="1400">Meus Serviços</h2>
+        <div class="container">
+          <div
+            class="services-text"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            <p>
+              Se você procura um profissional capacitado para fazer seu site,
+              criar sua loja virtual, desenvolver um aplicativo de celular,
+              manutenção em computador ou aumentar as vendas do seu
+              empreendimento com gestão de tráfego pago, você está no lugar
+              certo. O <strong>Clintin dos Sites</strong> é mestre em soluções
+              digitais e ele com certeza pode te ajudar se você precisa de algum
+              desses serviços:
+            </p>
+          </div>
+          <div class="services-display">
+            <div
+              class="service-item"
+              data-aos="fade-down"
+              data-aos-duration="1400"
+            >
+              <h3>Landing Page</h3>
+              <p>
+                Landing Page ou Página de Vendas é um site de página única com
+                conteúdo direto e objetivo para vendas apresentando o seu
+                produto ou serviço para o cliente certo.
+              </p>
+              <a href="#" class="cta-button"
+                ><p>Quero uma página de vendas</p>
+                <img
+                  src="./assets/icons/whatsapp.svg"
+                  alt="Icone do Whatsapp"
+                />
+              </a>
             </div>
-            <img src="./assets/images/clintin-dos-sites.png" data-aos="fade-up" data-aos-duration="1400" alt="Imagem de Clintin dos Sites" class="hero-img">
-        </section>
-
-        <section class="services" id="services">
-            <h2 data-aos="fade-down" data-aos-duration="1400">Meus Serviços</h2>
-           <div class="container">
-             <div class="services-text" data-aos="fade-up" data-aos-duration="1400">
-                <p>Se você procura um profissional capacitado para fazer seu site, criar sua loja virtual, desenvolver um aplicativo de celular, manutenção em computador ou aumentar as vendas do seu empreendimento com gestão de tráfego pago, você está no lugar certo. O <strong>Clintin dos Sites</strong> é mestre em soluções digitais e ele com certeza pode te ajudar se você precisa de algum desses serviços:</p>
+            <div
+              class="service-item"
+              data-aos="fade-down"
+              data-aos-duration="1400"
+            >
+              <h3>Site Institucional</h3>
+              <p>
+                Site Institucional é um site informativo sobre seu
+                empreendimento contendo mais de uma página (Inicio, Sobre,
+                Produtos, Localização, Contato)
+              </p>
+              <a href="#" class="cta-button"
+                ><p>Quero um site institucional</p>
+                <img
+                  src="./assets/icons/whatsapp.svg"
+                  alt="Icone do Whatsapp"
+                />
+              </a>
             </div>
-            <div class="services-display">
-                <div class="service-item" data-aos="fade-down" data-aos-duration="1400">
-                    <h3>Landing Page</h3>
-                    <p>
-                        Landing Page ou Página de Vendas é um site de página única com conteúdo direto e objetivo para vendas apresentando o seu produto ou serviço para o cliente certo.
-                    </p>
-                    <a href="#" class="cta-button"><p>Quero uma página de vendas</p> <img src="./assets/icons/whatsapp.svg" alt="Icone do Whatsapp"> </a>
-                </div>
-                <div class="service-item" data-aos="fade-down" data-aos-duration="1400">
-                    <h3>Site Institucional</h3>
-                    <p>
-                        Site Institucional é um site informativo sobre seu empreendimento contendo mais de uma página (Inicio, Sobre, Produtos, Localização, Contato)
-                    </p>
-                    <a href="#" class="cta-button"><p>Quero um site institucional</p> <img src="./assets/icons/whatsapp.svg" alt="Icone do Whatsapp"> </a>
-                </div>
-                <div class="service-item" data-aos="fade-down" data-aos-duration="1400">
-                    <h3>Sistema SAAS</h3>
-                    <p>
-                        Desenvolva sistema de compras e agendamentos para seu empreendimento, indicados para lanchonetes, clinicas de estética, salão de beleza, barbearia e varios empreendimentos que desejam passar credibilidade do seu negócio e melhorar o desempenho de vendas e desempenho digital.
-                    </p>
-                    <a href="#" class="cta-button"><p>Quero consertar meu sistema SAAS</p> <img src="./assets/icons/whatsapp.svg" alt="Icone do Whatsapp"> </a>
-                </div>
-                <div class="service-item" data-aos="fade-down" data-aos-duration="1400">
-                    <h3>Loja Virtual</h3>
-                    <p>
-                        Tenha sua loja virtual construída do zero e esvazie o estoque da sua empresa através das vendas online com seu e-ecommerce personalizado.
-                    </p>
-                    <a href="#" class="cta-button"><p>Quero minha loja virtual</p> <img src="./assets/icons/whatsapp.svg" alt="Icone do Whatsapp"> </a>
-                </div>
-                <div class="service-item" data-aos="fade-down" data-aos-duration="1400">
-                    <h3>Tráfego Pago</h3>
-                    <p>
-                        Decole as vendas do seu empreendimento com anúncios nas plataformas que mais vendem: Google, Instagram e Facebook. Tenha todos os dias tem pessoas querendo comprar ou contratar seu produto/serviço, trazemos elas até você.
-                    </p>
-                    <a href="#" class="cta-button"><p>Quero aumentar minhas vendas</p> <img src="./assets/icons/whatsapp.svg" alt="Icone do Whatsapp"> </a>
-                </div>
-                <div class="service-item" data-aos="fade-down" data-aos-duration="1400">
-                    <h3>Manutenção em Computadores</h3>
-                    <p>
-                        Manutenção em computadores e notebooks em Belo Horizonte  e Contagem. Meus principais serviços:
-                    </p>
-                    <ul>
-                        <li>Formatação</li>
-                        <li>Limpeza Interna</li>
-                        <li>Aplicação de Pasta Térmica</li>
-                        <li>Frete Grátis</li>
-                    </ul>
-                    <p>A partir de R$189,90</p>
-                    <a href="#" class="cta-button"><p>Quero consertar meu computador</p> <img src="./assets/icons/whatsapp.svg" alt="Icone do Whatsapp"> </a>
-                </div>
+            <div
+              class="service-item"
+              data-aos="fade-down"
+              data-aos-duration="1400"
+            >
+              <h3>Sistema SAAS</h3>
+              <p>
+                Desenvolva sistema de compras e agendamentos para seu
+                empreendimento, indicados para lanchonetes, clinicas de
+                estética, salão de beleza, barbearia e varios empreendimentos
+                que desejam passar credibilidade do seu negócio e melhorar o
+                desempenho de vendas e desempenho digital.
+              </p>
+              <a href="#" class="cta-button"
+                ><p>Quero consertar meu sistema SAAS</p>
+                <img
+                  src="./assets/icons/whatsapp.svg"
+                  alt="Icone do Whatsapp"
+                />
+              </a>
             </div>
-           </div>
-           <a href="" class="cta-button">
-            <p>Fale no WhatsApp</p>
-            <img src="./assets/icons/whatsapp.svg" alt="Icone do WhatsApp">
-           </a>
-        </section>
-
-        <section class="portifolio" id="portifolio">
-            <h2 data-aos="fade-down" data-aos-duration="1400">Veja meu portifolio de sites e sistemas que já estão online por ai...</h2>
-            <div class="portifolio-display">
-                <div class="flex" data-aos="fade-up" data-aos-duration="1400">
-                    <div class="img-port" style="background-image: url(./assets/images/vidrosa-page.webp);">
-                        <div class="overlay">Vidraçaria Vidrosa</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/gmglass.webp);">
-                        <div class="overlay">Vidraçaria GM Glass</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/clickschat-page.webp);">
-                        <div class="overlay">ClicksChat</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/cavalo-potente-landingpage.webp);">
-                        <div class="overlay">Método Cavalo Potente</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/fce-serralheria.webp);">
-                        <div class="overlay">FCE Serralheria</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/angela-modas-landingpage.webp);">
-                        <div class="overlay">
-                            Angela Modas
-                        </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/dnbluxembourg.webp);">
-                        <div class="overlay">
-                            DNB Luxembourg
-                        </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/euarrumo.webp);">
-                        <div class="overlay">
-                            Eu Arrumo
-                        </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/hreletronicos.webp);">
-                        <div class="overlay">
-                            HR Eletronicos
-                        </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/international\ car\ services.webp);">
-                        <div class="overlay">
-                            International Car Services
-                        </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/soaresfibra.webp);">
-                        <div class="overlay">
-                            Soares Fibra
-                        </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/wedson-construcoes.webp);">
-                        <div class="overlay">
-                            Wedson Reformas e Construções
-                        </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/amandapas-page.webp);">
-                        <div class="overlay">
-                            Amanda Pas
-                        </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/sissi-bolinhos.webp);">
-                        <div class="overlay">
-                            Sissi Bolinhos
-                        </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./assets/images/segredodaresistencia-page.webp);">
-                        <div class="overlay">
-                            O Segredo da Resistencia
-                        </div>
-                    </div>
-                </div>
-                <div class="portifolio-text">
-                    <p data-aos="zoom-in-down" data-aos-duration="1400">Um site como esses pode acrescentar muita percepção de valor ao seu negócio, aumentar suas vendas e sempre te trazer clientes interessados no seu produto ou serviço, fazendo com que assim a sua presença digital estará livrando o seu empreendimento de indicações boca-a-boca e conseguindo clientes qualificados todos os dias no seu WhatsApp.</p>
-                    <p data-aos="fade-down" data-aos-duration="1400"><span data-aos="zoom-in-up" data-aos-duration="1400">Precisa destacar seu empreendimento na internet?</span> <br> Fale com o Clintin dos Sites no WhatsApp apertão o botão abaixo.</p>
-                </div>
-                <a href="https://wa.me/5531994038782" data-aos="fade-up" data-aos-duration="1400" target="_blank" class="cta-button">
-                    <p>Fale comigo no WhatsApp</p>
-                    <img src="./assets/icons/whatsapp.svg" alt="Icone do whatsapp">
-                </a>
+            <div
+              class="service-item"
+              data-aos="fade-down"
+              data-aos-duration="1400"
+            >
+              <h3>Loja Virtual</h3>
+              <p>
+                Tenha sua loja virtual construída do zero e esvazie o estoque da
+                sua empresa através das vendas online com seu e-ecommerce
+                personalizado.
+              </p>
+              <a href="#" class="cta-button"
+                ><p>Quero minha loja virtual</p>
+                <img
+                  src="./assets/icons/whatsapp.svg"
+                  alt="Icone do Whatsapp"
+                />
+              </a>
             </div>
-
-        </section>
-        
-        <section class="sobre" id="sobre">
-            <h2 data-aos="fade-down" data-aos-duration="1400">Quem é o Clintin dos Sites?</h2>
-            <div class="sobre-display">
-                <div class="sobre-text" data-aos="fade-up" data-aos-duration="1400">
-                    <p>
-                        Prazer, sou o Clintin dos Sites — um profissional apaixonado por resultados e movido por estratégia. Minha jornada no mercado digital começou de forma inusitada, mas cheia de aprendizados: em plena pandemia, criei meu primeiro negócio vendendo bolo no pote pela internet. Foi ali que percebi a força do digital. Com criatividade e estratégias simples, consegui atrair clientes, vender todos os dias e transformar um momento difícil em uma oportunidade real.
-                    </p>
-                    <p>
-                        Desde então, nunca mais parei. Sou formado em Administração e, nos últimos anos, me especializei em desenvolvimento de sites, landing pages e gestão de tráfego pago. Já ajudei dezenas de negócios a se posicionarem online de forma profissional e estratégica — sempre com foco em atrair, engajar e converter.
-                    </p>
-                    <p>
-                        Utilizo ferramentas modernas como React, Next.js, PHPMailer, WordPress, além de campanhas de tráfego pago com Facebook Ads e Google Ads. Tudo isso com um único objetivo: gerar resultados reais para você.
-                    </p>
-                    <p>
-                        Hoje, combino visão empreendedora com conhecimento técnico para entregar soluções completas — seja um site institucional, uma landing page focada em conversão ou uma campanha paga que realmente funciona.
-                    </p>
-                    <p>
-                        Se você quer sair do amadorismo e construir uma presença digital forte e lucrativa, conte comigo. Aqui tem estratégia, tem execução e tem resultado.
-                    </p>
-                </div>
-                <img src="./assets/images/clintin-dos-sites.png" alt="Foto de Clintin dos Sites" data-aos="flip-up" data-aos-delay="200" data-aos-duration="1800" class="sobre-img">
-
+            <div
+              class="service-item"
+              data-aos="fade-down"
+              data-aos-duration="1400"
+            >
+              <h3>Tráfego Pago</h3>
+              <p>
+                Decole as vendas do seu empreendimento com anúncios nas
+                plataformas que mais vendem: Google, Instagram e Facebook. Tenha
+                todos os dias tem pessoas querendo comprar ou contratar seu
+                produto/serviço, trazemos elas até você.
+              </p>
+              <a href="#" class="cta-button"
+                ><p>Quero aumentar minhas vendas</p>
+                <img
+                  src="./assets/icons/whatsapp.svg"
+                  alt="Icone do Whatsapp"
+                />
+              </a>
             </div>
-        </section>
-
-        <section class="avaliacoes">
-            <h2>O que os meus clientes dizem sobre meus serviços:</h2>
-
-        </section>
-
-        <section class="faq">
-            <h2>Perguntas Frequentes</h2>
-            <div class="faq-display">
-                <div class="faq-item">
-                <button class="faq-question">Qual o prazo para entrega do site?</button>
-                <div class="faq-answer">
-                    <p>O prazo médio é de 7 dias úteis, dependendo da complexidade e do envio das informações por parte do cliente.</p>
-                </div>
-                </div>
-                <div class="faq-item">
-                <button class="faq-question">Posso solicitar alterações depois que o site estiver pronto?</button>
-                <div class="faq-answer">
-                    <p>Sim! Incluímos um período de suporte e ajustes após a entrega do projeto.</p>
-                </div>
-                </div>
-                <div class="faq-item">
-                <button class="faq-question">O site é responsivo para celular?</button>
-                <div class="faq-answer">
-                    <p>Sim, todos os sites são otimizados para funcionar bem em computadores, tablets e smartphones.</p>
-                </div>
-                </div>
+            <div
+              class="service-item"
+              data-aos="fade-down"
+              data-aos-duration="1400"
+            >
+              <h3>Manutenção em Computadores</h3>
+              <p>
+                Manutenção em computadores e notebooks em Belo Horizonte e
+                Contagem. Meus principais serviços:
+              </p>
+              <ul>
+                <li>Formatação</li>
+                <li>Limpeza Interna</li>
+                <li>Aplicação de Pasta Térmica</li>
+                <li>Frete Grátis</li>
+              </ul>
+              <p>A partir de R$189,90</p>
+              <a href="#" class="cta-button"
+                ><p>Quero consertar meu computador</p>
+                <img
+                  src="./assets/icons/whatsapp.svg"
+                  alt="Icone do Whatsapp"
+                />
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+        <a href="" class="cta-button">
+          <p>Fale no WhatsApp</p>
+          <img src="./assets/icons/whatsapp.svg" alt="Icone do WhatsApp" />
+        </a>
+      </section>
 
-
-        <section class="cta-final">
-            <h2 data-aos="fade-down" data-aos-duration="1400">Pronto para turbinar seu empreendimento no digital?</h2>
-            <div class="ctafinal-display" data-aos="fade-up" data-aos-duration="1400">
-                <p>
-                Mais de 100 empreendedores já confiaram no Clintin dos Sites. Se você precisa dar um up nas vendas do seu empreendimento utilizando estratégias digitais e métodos validados, eu sou o profissional qualificado para seu empreendimento.
-                </p>
-                <p>
-                    Quer saber quanto custa um site profissional para o seu negócio? Clique e peça um orçamento gratuito.
-                </p>
-                <a href="https://wa.me/5531994038782" data-aos="flip-down" data-aos-duration="1000" target="_blank" class="cta-button">
-                    <p>Solicite orçamento no WhatsApp</p>
-                    <img src="./assets/icons/whatsapp.svg" alt="icone do whatsapp">
-                </a>
+      <section class="portifolio" id="portifolio">
+        <h2 data-aos="fade-down" data-aos-duration="1400">
+          Veja meu portifolio de sites e sistemas que já estão online por ai...
+        </h2>
+        <div class="portifolio-display">
+          <div class="flex" data-aos="fade-up" data-aos-duration="1400">
+            <div
+              class="img-port"
+              style="background-image: url(./assets/images/vidrosa-page.webp)"
+            >
+              <div class="overlay">Vidraçaria Vidrosa</div>
             </div>
-        </section>
-
-        <section class="contato">
-            <h2 data-aos="fade-down" data-aos-duration="1400">Contato e midias sociais</h2>
-
-            <div class="contato-display">
-                <a href="https://wa.me/5531994038782" data-aos="fade-down" data-aos-duration="1400" class="cta-button" target="_blank"><p>Fale no WhatsApp</p><img src="./assets/icons/whatsapp.svg" alt="icone do whatsapp"></a>
-                <a href="https://instagram.com/clintin_dos_sites" data-aos="fade-down" data-aos-duration="1800" target="_blank" class="cta-button">
-                    <p>Siga-me no Instagram</p>
-                    <img src="./assets/icons/instagram.svg" alt="Icone do instagram">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61576133499522#" target="_blank" data-aos="fade-down" data-aos-duration="2200" class="cta-button">
-                    <p>Página do Facebook</p>
-                    <img src="./assets/icons/facebook.svg" alt="icone do facebook">
-                </a>
+            <div
+              class="img-port"
+              style="background-image: url(./assets/images/gmglass.webp)"
+            >
+              <div class="overlay">Vidraçaria GM Glass</div>
             </div>
-        </section>
+            <div
+              class="img-port"
+              style="
+                background-image: url(./assets/images/clickschat-page.webp);
+              "
+            >
+              <div class="overlay">ClicksChat</div>
+            </div>
+            <div
+              class="img-port"
+              style="
+                background-image: url(./assets/images/cavalo-potente-landingpage.webp);
+              "
+            >
+              <div class="overlay">Método Cavalo Potente</div>
+            </div>
+            <div
+              class="img-port"
+              style="
+                background-image: url(./assets/images/fce-serralheria.webp);
+              "
+            >
+              <div class="overlay">FCE Serralheria</div>
+            </div>
+            <div
+              class="img-port"
+              style="
+                background-image: url(./assets/images/angela-modas-landingpage.webp);
+              "
+            >
+              <div class="overlay">Angela Modas</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(./assets/images/dnbluxembourg.webp)"
+            >
+              <div class="overlay">DNB Luxembourg</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(./assets/images/euarrumo.webp)"
+            >
+              <div class="overlay">Eu Arrumo</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(./assets/images/hreletronicos.webp)"
+            >
+              <div class="overlay">HR Eletronicos</div>
+            </div>
+            <div
+              class="img-port"
+              style="
+                background-image: url(./assets/images/international\ car\ services.webp);
+              "
+            >
+              <div class="overlay">International Car Services</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(./assets/images/soaresfibra.webp)"
+            >
+              <div class="overlay">Soares Fibra</div>
+            </div>
+            <div
+              class="img-port"
+              style="
+                background-image: url(./assets/images/wedson-construcoes.webp);
+              "
+            >
+              <div class="overlay">Wedson Reformas e Construções</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(./assets/images/amandapas-page.webp)"
+            >
+              <div class="overlay">Amanda Pas</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(./assets/images/sissi-bolinhos.webp)"
+            >
+              <div class="overlay">Sissi Bolinhos</div>
+            </div>
+            <div
+              class="img-port"
+              style="
+                background-image: url(./assets/images/segredodaresistencia-page.webp);
+              "
+            >
+              <div class="overlay">O Segredo da Resistencia</div>
+            </div>
+          </div>
+          <div class="portifolio-text">
+            <p data-aos="zoom-in-down" data-aos-duration="1400">
+              Um site como esses pode acrescentar muita percepção de valor ao
+              seu negócio, aumentar suas vendas e sempre te trazer clientes
+              interessados no seu produto ou serviço, fazendo com que assim a
+              sua presença digital estará livrando o seu empreendimento de
+              indicações boca-a-boca e conseguindo clientes qualificados todos
+              os dias no seu WhatsApp.
+            </p>
+            <p data-aos="fade-down" data-aos-duration="1400">
+              <span data-aos="zoom-in-up" data-aos-duration="1400"
+                >Precisa destacar seu empreendimento na internet?</span
+              >
+              <br />
+              Fale com o Clintin dos Sites no WhatsApp apertão o botão abaixo.
+            </p>
+          </div>
+          <a
+            href="https://wa.me/5531994038782"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            target="_blank"
+            class="cta-button"
+          >
+            <p>Fale comigo no WhatsApp</p>
+            <img src="./assets/icons/whatsapp.svg" alt="Icone do whatsapp" />
+          </a>
+        </div>
+      </section>
+
+      <section class="sobre" id="sobre">
+        <h2 data-aos="fade-down" data-aos-duration="1400">
+          Quem é o Clintin dos Sites?
+        </h2>
+        <div class="sobre-display">
+          <div class="sobre-text" data-aos="fade-up" data-aos-duration="1400">
+            <p>
+              Prazer, sou o Clintin dos Sites — um profissional apaixonado por
+              resultados e movido por estratégia. Minha jornada no mercado
+              digital começou de forma inusitada, mas cheia de aprendizados: em
+              plena pandemia, criei meu primeiro negócio vendendo bolo no pote
+              pela internet. Foi ali que percebi a força do digital. Com
+              criatividade e estratégias simples, consegui atrair clientes,
+              vender todos os dias e transformar um momento difícil em uma
+              oportunidade real.
+            </p>
+            <p>
+              Desde então, nunca mais parei. Sou formado em Administração e, nos
+              últimos anos, me especializei em desenvolvimento de sites, landing
+              pages e gestão de tráfego pago. Já ajudei dezenas de negócios a se
+              posicionarem online de forma profissional e estratégica — sempre
+              com foco em atrair, engajar e converter.
+            </p>
+            <p>
+              Utilizo ferramentas modernas como React, Next.js, PHPMailer,
+              WordPress, além de campanhas de tráfego pago com Facebook Ads e
+              Google Ads. Tudo isso com um único objetivo: gerar resultados
+              reais para você.
+            </p>
+            <p>
+              Hoje, combino visão empreendedora com conhecimento técnico para
+              entregar soluções completas — seja um site institucional, uma
+              landing page focada em conversão ou uma campanha paga que
+              realmente funciona.
+            </p>
+            <p>
+              Se você quer sair do amadorismo e construir uma presença digital
+              forte e lucrativa, conte comigo. Aqui tem estratégia, tem execução
+              e tem resultado.
+            </p>
+          </div>
+          <img
+            src="./assets/images/clintin-dos-sites.png"
+            alt="Foto de Clintin dos Sites"
+            data-aos="flip-up"
+            data-aos-delay="200"
+            data-aos-duration="1800"
+            class="sobre-img"
+          />
+        </div>
+      </section>
+
+      <section class="avaliacoes">
+        <h2>O que os meus clientes dizem sobre meus serviços:</h2>
+      </section>
+
+      <section class="faq">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-display">
+          <div class="faq-item">
+            <button class="faq-question">
+              Qual o prazo para entrega do site?
+            </button>
+            <div class="faq-answer">
+              <p>
+                O prazo médio é de 7 dias úteis, dependendo da complexidade e do
+                envio das informações por parte do cliente.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Posso solicitar alterações depois que o site estiver pronto?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sim! Incluímos um período de suporte e ajustes após a entrega do
+                projeto.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              O site é responsivo para celular?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sim, todos os sites são otimizados para funcionar bem em
+                computadores, tablets e smartphones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-final">
+        <h2 data-aos="fade-down" data-aos-duration="1400">
+          Pronto para turbinar seu empreendimento no digital?
+        </h2>
+        <div
+          class="ctafinal-display"
+          data-aos="fade-up"
+          data-aos-duration="1400"
+        >
+          <p>
+            Mais de 100 empreendedores já confiaram no Clintin dos Sites. Se
+            você precisa dar um up nas vendas do seu empreendimento utilizando
+            estratégias digitais e métodos validados, eu sou o profissional
+            qualificado para seu empreendimento.
+          </p>
+          <p>
+            Quer saber quanto custa um site profissional para o seu negócio?
+            Clique e peça um orçamento gratuito.
+          </p>
+          <a
+            href="https://wa.me/5531994038782"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+            target="_blank"
+            class="cta-button"
+          >
+            <p>Solicite orçamento no WhatsApp</p>
+            <img src="./assets/icons/whatsapp.svg" alt="icone do whatsapp" />
+          </a>
+        </div>
+      </section>
+
+      <section class="contato">
+        <h2 data-aos="fade-down" data-aos-duration="1400">
+          Contato e midias sociais
+        </h2>
+
+        <div class="contato-display">
+          <a
+            href="https://wa.me/5531994038782"
+            data-aos="fade-down"
+            data-aos-duration="1400"
+            class="cta-button"
+            target="_blank"
+            ><p>Fale no WhatsApp</p>
+            <img src="./assets/icons/whatsapp.svg" alt="icone do whatsapp"
+          /></a>
+          <a
+            href="https://instagram.com/clintin_dos_sites"
+            data-aos="fade-down"
+            data-aos-duration="1800"
+            target="_blank"
+            class="cta-button"
+          >
+            <p>Siga-me no Instagram</p>
+            <img src="./assets/icons/instagram.svg" alt="Icone do instagram" />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61576133499522#"
+            target="_blank"
+            data-aos="fade-down"
+            data-aos-duration="2200"
+            class="cta-button"
+          >
+            <p>Página do Facebook</p>
+            <img src="./assets/icons/facebook.svg" alt="icone do facebook" />
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <img src="./assets/images/logo.svg" alt="logo-clintin-dos-sites" data-aos="flip-left" data-aos-duration="2000">
-        <h3>Clintin dos Sites</h3>
-        <p>2025 - Todos os Direitos Reservados</p>
-        <h4>Desenvolvedor Web e Gestor de Tráfego Pago</h4>
+      <img
+        src="./assets/images/logo.svg"
+        alt="logo-clintin-dos-sites"
+        data-aos="flip-left"
+        data-aos-duration="2000"
+      />
+      <h3>Clintin dos Sites</h3>
+      <p>2025 - Todos os Direitos Reservados</p>
+      <h4>Desenvolvedor Web e Gestor de Tráfego Pago</h4>
     </footer>
-    <a href="https://wa.me/5531994038782?text=Quero%20realizar%20um%20agendamento%20hoje!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
-        <img src="assets/icons/whatssapp-2.svg" alt="Botão whatsapp">
-        <span class="tooltip-text">Fale comigo no WhatsApp</span>
+    <a
+      href="https://wa.me/5531994038782?text=Quero%20realizar%20um%20agendamento%20hoje!"
+      class="btn-whatsapp"
+      target="_blank"
+      data-aos="zoom-in-up"
+      data-aos-delay="400"
+    >
+      <img src="assets/icons/whatssapp-2.svg" alt="Botão whatsapp" />
+      <span class="tooltip-text">Fale comigo no WhatsApp</span>
     </a>
     <script src="script.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
+  </body>
 </html>

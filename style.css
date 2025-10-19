@@ -1,23 +1,22 @@
 :root {
-    --azul-base: #00ffff;
-    --violeta-base: #5e17eb;
-    --rosa-base: #ff00ff;
-    --branco-base: #ffffff;
-    --preto-base: #000000;
-
+  --azul-base: #00ffff;
+  --violeta-base: #5e17eb;
+  --rosa-base: #ff00ff;
+  --branco-base: #ffffff;
+  --preto-base: #000000;
 }
-@import url('https://fonts.cdnfonts.com/css/lemon-tuesday');   
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.cdnfonts.com/css/Poppins-tuesday");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 a {
-    text-decoration: none;
-    color: var(--branco-base);
+  text-decoration: none;
+  color: var(--branco-base);
 }
 header {
   display: flex;
@@ -26,7 +25,7 @@ header {
   background-color: var(--violeta-base);
   padding: 10px 20px;
   position: relative;
-  
+  display: none;
 }
 
 header img {
@@ -91,36 +90,36 @@ header img {
 }
 
 main {
-    background-color: #0d0d0d;
+  background-color: #0d0d0d;
 }
 nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--violeta-base);
-    width: 100%;
-    padding: 20px 4%;
-    font-family: 'Lemon Tuesday', sans-serif;
-    text-shadow: 1px 1px 1px var(--azul-base);
-    text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--violeta-base);
+  width: 100%;
+  padding: 20px 4%;
+  font-family: "Poppins Tuesday", sans-serif;
+  text-shadow: 1px 1px 1px var(--azul-base);
+  text-transform: uppercase;
 }
 
 section {
-    padding: 10px 4%;
+  padding: 10px 4%;
 }
 .cta-button {
-    background-color: #00ffff;
-    color: var(--branco-base);
-    padding: 15px;
-    border-radius: 12px;
-    text-shadow: 1px 2px 1px var(--violeta-base);
-    box-shadow: 3px 5px 3px var(--rosa-base);
-    font-family: 'Lemon Tuesday', sans-serif;
-    display: flex;
-    align-items: center;
-    font-size: 32px;
-    width: fit-content;
-    justify-content: space-between;
-    gap: 1rem;
+  background-color: #00ffff;
+  color: var(--branco-base);
+  padding: 15px;
+  border-radius: 12px;
+  text-shadow: 1px 2px 1px var(--violeta-base);
+  box-shadow: 3px 5px 3px var(--rosa-base);
+  font-family: "Poppins Tuesday", sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  width: fit-content;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .cta-button img {
@@ -129,228 +128,225 @@ section {
 }
 /* Inicio da Sessão Hero */
 .hero {
-    max-width: 100%;
-    display: flex;
-    padding: 10px 4%;
+  max-width: 100%;
+  display: flex;
+  padding: 10px 4%;
 }
 .hero-text {
-    color: var(--branco-base);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+  color: var(--branco-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hero-text h1 {
-    font-family: 'Lemon Tuesday', sans-serif;
-    font-size: 62px;
-    text-shadow: 0px 10px var(--violeta-base);
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 62px;
+  text-shadow: 0px 3px var(--violeta-base);
 }
-.hero-text p  {
-    font-size: 32px;
-    text-shadow: 3px 5px 3px var(--rosa-base);
-    font-family: 'Poppins', sans-serif;
+.hero-text p {
+  font-size: 32px;
+  text-shadow: 3px 5px 3px var(--rosa-base);
+  font-family: "Poppins", sans-serif;
 }
 .hero-img {
-    max-width: 400px;
-    filter: drop-shadow(2px 5px 10px var(--violeta-base));
+  max-width: 400px;
+  filter: drop-shadow(2px 5px 10px var(--violeta-base));
 }
 
 /* Fim da Sessão Hero - Inicio da Sessão Serviços */
 .services {
-    background-color: var(--branco-base);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--branco-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .services h2 {
-    text-align: center;
-    font-family: 'Lemon Tuesday', sans-serif;
-    text-shadow: 1px 2px 1px var(--rosa-base);
-    font-size: 42px;
+  text-align: center;
+  font-family: "Poppins Tuesday", sans-serif;
+  text-shadow: 1px 2px 1px var(--rosa-base);
+  font-size: 42px;
 }
 .services p {
-    font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 .services .services-display {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  align-items: stretch;
 }
-.services .services-display .service-item{
-    background-color: var(--violeta-base);
-    color: var(--branco-base);
-    padding: 10px 2%;
-    box-shadow: 3px 5px 3px var(--azul-base);
-    max-width: 370px;
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.services .services-display .service-item {
+  background-color: var(--violeta-base);
+  color: var(--branco-base);
+  padding: 10px 2%;
+  box-shadow: 3px 5px 3px var(--azul-base);
+  max-width: 370px;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .service-item h3 {
-    font-family: 'Lemon Tuesday', sans-serif;
-    text-transform: uppercase;
+  font-family: "Poppins Tuesday", sans-serif;
+  text-transform: uppercase;
 }
 .service-item p {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .service-item .cta-button {
-    font-size: 25px;
-    line-height: 1;
+  font-size: 16px;
+  line-height: 1;
 }
 .service-item .cta-button img {
-    width: 50px;
+  width: 25px;
 }
 /* Fim da Sessão Serviços - Inicio da Sessão Portifolio */
 .portifolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--preto-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--preto-base);
 }
 .portifolio-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .portifolio h2 {
-    color: var(--branco-base);
-    font-family: 'Lemon Tuesday', sans-serif;
-    text-transform: uppercase;
-    text-shadow: 1px 3px 1px var(--rosa-base);
-    font-size: 35px;
-    text-align: center;
+  color: var(--branco-base);
+  font-family: "Poppins Tuesday", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 3px 1px var(--rosa-base);
+  font-size: 35px;
+  text-align: center;
 }
 .portifolio .flex {
-    justify-content: space-around;
-    margin-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-  .img-port {
-    width: 360px;
-    height: 460px;
-    background-color: var(--vermelho-2);
-    background-size: cover;
-    background-position: 100% 0%;
-    transition: 10s;
-    border-radius: 40px;
-    cursor: pointer;
-    position: relative;
-    
-  }
-  .img-port:hover {
-    background-position: 100% 100%;
-  }
-  .overlay {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    font-weight: 600;
-    background-color: #00000028;
-    color: var(--branco-base);
-    text-shadow: 1px 3px 1px var(--azul-base);
-    font-family: 'Lemon Tuesday', sans-serif;
-    text-transform: uppercase;
-    opacity: 0;
-    transition: 0.5s;
-  }
-  .overlay:hover {
-    opacity: 1;
-  }
-  .portifolio-text {
-    color: var(--branco-base);
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-  }
-  .portifolio-text p:nth-child(1) {
-    font-size: 22px;
-    line-height: 1.3;
-  }
-  .portifolio-text span {
-    color: var(--azul-base);
-    font-size: 28px;
-  }
+  justify-content: space-around;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-color: var(--vermelho-2);
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 10s;
+  border-radius: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.img-port:hover {
+  background-position: 100% 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  background-color: #00000028;
+  color: var(--branco-base);
+  text-shadow: 1px 3px 1px var(--azul-base);
+  font-family: "Poppins Tuesday", sans-serif;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: 0.5s;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.portifolio-text {
+  color: var(--branco-base);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.portifolio-text p:nth-child(1) {
+  font-size: 22px;
+  line-height: 1.3;
+}
+.portifolio-text span {
+  color: var(--azul-base);
+  font-size: 28px;
+}
 /* Fim da Sessão Portifolio - Inicio da Sessão Sobre */
 .sobre {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--branco-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--branco-base);
 }
 .sobre h2 {
-    font-family: 'Lemon Tuesday', sans-serif;
-    font-size: 42px;
-    text-shadow: 1px 3px 1px var(--violeta-base);
-
+  font-family: "Poppins Tuesday", sans-serif;
+  font-size: 42px;
+  text-shadow: 1px 3px 1px var(--violeta-base);
 }
 .sobre-display {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .sobre-text {
-    flex: 1;
-    font-family: 'Poppins', sans-serif;
+  flex: 1;
+  font-family: "Poppins", sans-serif;
 }
 .sobre-img {
-    filter: drop-shadow(2px 5px 10px #5e17eb);
-    max-width: 500px;
+  filter: drop-shadow(2px 5px 10px #5e17eb);
+  max-width: 500px;
 }
 /* Fim da Sessão Sobre - Inicio da Sessão Avaliações */
 .avaliacoes {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--violeta-base);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--violeta-base);
 }
 .avaliacoes h2 {
-    font-family: 'Lemon Tuesday', sans-serif;
-    color: var(--branco-base);
-    text-shadow: 1px 3px 1px var(--preto-base);
-    text-align: center;
+  font-family: "Poppins Tuesday", sans-serif;
+  color: var(--branco-base);
+  text-shadow: 1px 3px 1px var(--preto-base);
+  text-align: center;
 }
 
 /* Fim da Sessão Avaliações - Inicio da Sessão FAQ */
 .faq {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: var(--preto-base);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--preto-base);
 }
 .faq h2 {
-    color: var(--branco-base);
-    font-family: 'poppins', sans-serif;
-    text-align: center;
+  color: var(--branco-base);
+  font-family: "poppins", sans-serif;
+  text-align: center;
 }
 .faq-display {
-    background-color: var(--rosa-base);
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 3px 5px 3px var(--azul-base);
+  background-color: var(--rosa-base);
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 3px 5px 3px var(--azul-base);
 }
 .faq-item {
   border-bottom: 1px solid var(--azul-base);
   padding: 1rem 0;
-  font-family: 'Poppins' sans-serif;
+  font-family: "Poppins" sans-serif;
 }
-.faq-item:last-child{
-    border-bottom: none;
+.faq-item:last-child {
+  border-bottom: none;
 }
 
 .faq-question {
@@ -378,7 +374,7 @@ section {
   opacity: 0;
   padding: 10px 4%;
   color: var(--branco-base);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .faq-answer p {
@@ -393,80 +389,79 @@ section {
 
 /* Fim da Sessão FAQ - Inicio da Sessão Cta-final */
 .cta-final {
-    background-color: var(--violeta-base);
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-
+  background-color: var(--violeta-base);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .cta-final h2 {
-    font-family: 'Poppins', sans-serif;
-    color: var(--branco-base);
-    text-shadow: 1px 3px 1px var(--preto-base);
-    font-size: 32px;
-    text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: var(--branco-base);
+  text-shadow: 1px 3px 1px var(--preto-base);
+  font-size: 32px;
+  text-align: center;
 }
 .ctafinal-display {
-    background-color: var(--rosa-base);
-    padding: 10px 4%;
-    font-family: 'Poppins', sans-serif;
-    max-width: 800px;
-    border-radius: 15px;
-    box-shadow: 3px 5px 3px var(--violeta-base);
-    margin: 0 auto;
-    color: var(--branco-base);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  background-color: var(--rosa-base);
+  padding: 10px 4%;
+  font-family: "Poppins", sans-serif;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 3px 5px 3px var(--violeta-base);
+  margin: 0 auto;
+  color: var(--branco-base);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .ctafinal-display .cta-button {
-    box-shadow: 3px 5px 3px var(--violeta-base);
+  box-shadow: 3px 5px 3px var(--violeta-base);
 }
 /* Fim da Sessão cta-final - Inicio da Sessão contatos */
 .contato {
-    background-color: var(--violeta-base);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  background-color: var(--violeta-base);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .contato h2 {
-    font-family: 'Lemon Tuesday', sans-serif;
-    font-size: 32px;
-    color: var(--branco-base);
-    text-shadow: 1px 3px 1px var(--rosa-base);
-    text-align: center;
+  font-family: "Poppins Tuesday", sans-serif;
+  font-size: 32px;
+  color: var(--branco-base);
+  text-shadow: 1px 3px 1px var(--rosa-base);
+  text-align: center;
 }
 .contato-display {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-.contato-display .cta-button:nth-child(1){
-    background-color: rgb(41, 239, 41);
+.contato-display .cta-button:nth-child(1) {
+  background-color: rgb(41, 239, 41);
 }
 .contato-display .cta-button:nth-child(2) {
-    background-color: #ff00ff;
-    box-shadow: 1px 3px 1px var(--branco-base);
+  background-color: #ff00ff;
+  box-shadow: 1px 3px 1px var(--branco-base);
 }
-.contato-display .cta-button:nth-child(3){
-    background-color: rgb(11, 77, 243);
+.contato-display .cta-button:nth-child(3) {
+  background-color: rgb(11, 77, 243);
 }
 
 footer {
-    background-color: var(--violeta-base);
-    text-align: center;
-    color: var(--branco-base);
-    text-shadow: 1px 2px 1px var(--preto-base);
-    text-transform: uppercase;
-    font-family: 'Lemon Tuesday', sans-serif;
+  background-color: var(--violeta-base);
+  text-align: center;
+  color: var(--branco-base);
+  text-shadow: 1px 2px 1px var(--preto-base);
+  text-transform: uppercase;
+  font-family: "Poppins Tuesday", sans-serif;
 }
 footer img {
-    max-width: 86px;
-    margin: 0;
-    padding: 0;
-    filter:  drop-shadow(2px 5px 10px var(--rosa-base));
+  max-width: 86px;
+  margin: 0;
+  padding: 0;
+  filter: drop-shadow(2px 5px 10px var(--rosa-base));
 }
 .btn-whatsapp {
   position: fixed;
@@ -492,10 +487,10 @@ footer img {
   border-radius: 8px;
   text-align: center;
   background-color: var(--violeta-base);
-  color: #FFF;
+  color: #fff;
   opacity: 0;
   transition: opacity 0.4s;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .btn-whatsapp:hover .tooltip-text {
@@ -503,119 +498,121 @@ footer img {
   opacity: 1;
 }
 
-@media screen and (max-width: 1020px){
-    
-    .hero {
-        display: flex;
-        flex-direction: column;
-        border-bottom: 13px solid var(--violeta-base);
-        padding-bottom: 0;
-    }
-    .hero-text {
-        max-width: 100%;
-        justify-content: center;
-        gap: 1rem;
-        text-align: center;
-    }
-    .hero-text h1 {
-        font-size: 1.55rem;
-    
-    }
-    .hero-text p {
-        font-size: 1.3rem;
-    }
-    .hero-img {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-    .hero-text .cta-button {
-        font-size: 1.5rem;
-        margin: 0 auto;
-    }
-    
-    .services {
-        display: flex;
-        flex-direction: column;
-    }
-    .services-text {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-    
-    .service-item h3 {
-        font-size: 2rem;
-    }
-    .service-item p {
-        font-size: 1.3rem;
-    }
-    .services .cta-button {
-        font-size: 1.4rem;
-    }
-    
+@media screen and (max-width: 1020px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 13px solid var(--violeta-base);
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
+  .hero-text {
+    max-width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+  .hero-img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .hero-text .cta-button {
+    font-size: 1.5rem;
+    margin: 0 auto;
+  }
 
-    .sobre {
-        display: flex;
-        flex-direction: column;
-    }
-    .sobre h2 {
-        text-align: center;
-    }
-    .sobre-display {
-        flex-direction: column-reverse;
-        max-width: 100%;
-        gap: 2rem;
-    }
-    .sobre-text {
-        max-width: 100%;
-        padding: 10px;
-    }
-    .sobre-text p {
-        font-size: 1.4rem;
-        line-height: 1.1;
-    }
-    .sobre-img {
-        max-width: 100%;
-    }
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 
-    .portifolio {
-        max-width: 100%;
-    }
-    .portifolio-display {
-        gap: 1.5rem;
-        padding-bottom: 20px;
-    }
-    .portifolio-text {
-        gap: 1.3rem;
-    }
-    .portifolio .cta-button {
-        font-size: 1.6rem;
-    }
+  .service-item h3 {
+    font-size: 2rem;
+  }
+  .service-item p {
+    font-size: 1.3rem;
+  }
+  .service-item .cta-button {
+    font-size: 1rem;
+    gap: 10px;
+  }
+  .services .cta-button {
+    font-size: 1rem;
+  }
+  .sobre {
+    display: flex;
+    flex-direction: column;
+  }
+  .sobre h2 {
+    text-align: center;
+  }
+  .sobre-display {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    gap: 2rem;
+  }
+  .sobre-text {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .sobre-text p {
+    font-size: 1.4rem;
+    line-height: 1.1;
+  }
+  .sobre-img {
+    max-width: 100%;
+  }
 
-    .cta-final .cta-button {
-        font-size: 1.6rem;
-        line-height: 1.1;
-    }
+  .portifolio {
+    max-width: 100%;
+  }
+  .portifolio-display {
+    gap: 1.5rem;
+    padding-bottom: 20px;
+  }
+  .portifolio-text {
+    gap: 1.3rem;
+  }
+  .portifolio .cta-button {
+    font-size: 1.3rem;
+  }
 
-    
-    .contato-display {
-        max-width: 100%;
-        flex-direction: column-reverse;
-        gap: 1.5rem;
-    }
-    .contato-display .cta-button{
-        font-size: 1.4rem;
-        max-width: 400px;
-        width: 90%;
-        margin: 0 auto;
-    }
-    footer {
-        max-width: 100%;
-        flex-direction: column;
-        padding: 15px;
-    }
-    footer img {
-        max-width: 86px;
-        margin: 0;
-        padding: 0;
-    }
+  .cta-final .cta-button {
+    font-size: 1rem;
+    line-height: 1.1;
+    gap: 10px;
+  }
+
+  .contato-display {
+    max-width: 100%;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+  .contato-display .cta-button {
+    font-size: 1.4rem;
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer {
+    max-width: 100%;
+    flex-direction: column;
+    padding: 15px;
+  }
+  footer img {
+    max-width: 86px;
+    margin: 0;
+    padding: 0;
+  }
 }
