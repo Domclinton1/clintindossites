@@ -677,5 +677,17 @@
     <script>
       AOS.init();
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var botao = document.getElementsByClassName("cta-button");
+        if (botao) {
+          botao.addEventListener("click", function () {
+            // 🔹 Evento personalizado para o Pixel
+            fbq("trackCustom", "ChamouNoWhats");
+            console.log("Evento Chamou no Whats disparado!");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
