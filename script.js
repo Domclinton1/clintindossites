@@ -56,7 +56,14 @@ document.querySelectorAll(".faq-question").forEach((button) => {
 //menu mobile
 const toggle = document.getElementById("menuToggle");
 const nav = document.getElementById("nav");
+const overlay = document.getElementById("menuOverlay");
 
 toggle.addEventListener("click", () => {
-  nav.classList.toggle("active");
+  nav.classList.add("active");
+  overlay.classList.add("active");
+});
+
+overlay.addEventListener("click", () => {
+  nav.classList.remove("active");
+  overlay.classList.remove("active");
 });

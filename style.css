@@ -92,65 +92,102 @@ nav a:last-child {
 
 /* NAV DESKTOP */
 .nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 85%;
+  max-width: 360px;
+  height: 100vh;
+
+  background: linear-gradient(180deg, #7f3dff, #4b1fb8);
+
   display: flex;
-  gap: 28px;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 24px;
+
+  transition: right 0.35s ease;
+  z-index: 999;
 }
 
 .nav a {
-  color: #d0d0d0;
-  font-size: 14px;
+  color: #fff;
+  font-size: 18px;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-.nav a:hover {
-  color: #12121a;
+.nav .btn-oferta {
+  margin-top: 20px;
+  background: #000;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-align: center;
 }
-nav a:hover:last-child {
-  color: #fff;
+.nav.active {
+  right: 0;
 }
 
 /* HAMBURGER */
+
 .menu-toggle {
-  display: none;
-  font-size: 26px;
+  font-size: 28px;
   background: none;
   border: none;
   color: #fff;
   cursor: pointer;
 }
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 998;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
 
 /* ===== MOBILE ===== */
-@media (max-width: 900px) {
+@media (min-width: 900px) {
+  /* Esconde hamburger */
   .menu-toggle {
-    display: block;
-  }
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-  }
-  .nav {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: var(--linear-gradient-roxo);
-    flex-direction: column;
-    width: 100%;
-    padding: 20px;
-    gap: 20px;
     display: none;
-    border-bottom: 1px solid rgba(127, 61, 255, 0.25);
   }
 
-  .nav.active {
-    display: flex;
+  /* Remove overlay no desktop */
+  .menu-overlay {
+    display: none;
+  }
+
+  /* Menu volta a ser inline */
+  .nav {
+    position: relative;
+    right: 0;
+    top: 0;
+    height: auto;
+    width: auto;
+
+    flex-direction: row;
+    align-items: center;
+
+    background: none;
+    padding: 0;
+    gap: 28px;
+
+    transform: none;
   }
 
   .nav a {
-    font-size: 16px;
+    font-size: 14px;
+    color: #d0d0d0;
+  }
+
+  .nav a:hover {
+    color: #7f3dff;
   }
 }
 
