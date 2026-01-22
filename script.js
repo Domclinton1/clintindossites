@@ -22,7 +22,7 @@ document
       "Mensagem: " +
       mensagem;
 
-    const url = "https://wa.me/5531994038782?text=" + texto;
+    const url = "https://wa.me/5538991369873?text=" + texto;
 
     window.open(url, "_blank");
   });
