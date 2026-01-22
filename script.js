@@ -1,31 +1,42 @@
-//formulario
-document
-  .getElementById("whatsappForm")
-  .addEventListener("submit", function (e) {
+// Formulário WhatsApp (suporta múltiplos forms)
+document.querySelectorAll(".form-whatsapp").forEach((form) => {
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const nome = document.getElementById("nome").value;
-    const servico = document.getElementById("servico").value;
-    const orcamento = document.getElementById("orcamento").value;
-    const mensagem = document.getElementById("mensagem").value;
+    const nome = form.querySelector('[name="nome"]').value;
+    const servico = form.querySelector('[name="servico"]').value;
+    const orcamento = form.querySelector('[name="orcamento"]').value;
+    const mensagem = form.querySelector('[name="mensagem"]').value;
+    const endereco = form.querySelector('[name="endereco"]')?.value || "";
 
-    const texto =
-      "Olá! Me chamo " +
-      nome +
-      ".%0A" +
-      "Serviço de interesse: " +
-      servico +
-      ".%0A" +
-      "Orçamento estimado: " +
-      orcamento +
-      ".%0A" +
-      "Mensagem: " +
-      mensagem;
+    const origem = form.dataset.origem || "Site";
 
-    const url = "https://wa.me/5538991369873?text=" + texto;
+    let texto = `📍 Origem: ${origem}%0A`;
+    texto += `👤 Nome: ${nome}%0A`;
+    texto += `🛠 Serviço: ${servico}%0A`;
+    texto += `💰 Orçamento: ${orcamento}%0A`;
+
+    if (endereco) {
+      texto += `🌍 Local: ${endereco}%0A`;
+    }
+
+    if (mensagem) {
+      texto += `💬 Mensagem: ${mensagem}`;
+    }
+
+    const url = `https://wa.me/5531994038782?text=${texto}`;
 
     window.open(url, "_blank");
+
+    /* Google Analytics Event */
+    if (typeof gtag === "function") {
+      gtag("event", "lead_whatsapp", {
+        origem: origem,
+        servico: servico,
+      });
+    }
   });
+});
 
 //carrossel netflix
 function abrirProjeto(imagem) {

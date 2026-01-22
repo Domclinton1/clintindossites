@@ -193,10 +193,21 @@ nav a:last-child {
 
 .cta-button {
   background: var(--linear-gradient-roxo);
-  padding: 10px;
+  padding: 14px 24px;
   border-radius: 20px;
   max-width: fit-content;
-  box-shadow: 0 0 25px rgba(127, 61, 255, 0.6), 0 0 60px rgba(127, 61, 255, 0.3);
+  box-shadow:
+    0 0 25px rgba(127, 61, 255, 0.6),
+    0 0 60px rgba(127, 61, 255, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.cta-google {
+  margin: 15px auto;
 }
 .form-whatsapp {
   width: 100%;
@@ -206,6 +217,8 @@ nav a:last-child {
   border-radius: 16px;
   border: 1px solid rgba(127, 61, 255, 0.3);
   box-shadow: 0 0 40px rgba(127, 61, 255, 0.15);
+  text-align: left;
+  margin: 0 auto;
 }
 
 .form-whatsapp h2 {
@@ -250,15 +263,20 @@ nav a:last-child {
 .form-whatsapp button {
   width: 100%;
   margin-top: 12px;
-  padding: 14px;
+  padding: 14px 24px;
   background: linear-gradient(135deg, #4b1fb8, #7f3dff, #9b6cff);
   border: none;
   border-radius: 14px;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+  gap: 1rem;
 }
 
 .form-whatsapp button:hover {
@@ -318,7 +336,9 @@ section {
   border-radius: 20px;
   padding: 32px;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .passo:hover {
@@ -377,7 +397,9 @@ section {
   border: 1px solid rgba(127, 61, 255, 0.25);
   border-radius: 20px;
   padding: 36px 28px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card-servico:hover {
@@ -690,6 +712,20 @@ section {
 .cta-form textarea {
   resize: none;
 }
+
+.cta-final {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cta-final .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
 /* ===== FOOTER ===== */
 
 .footer {
@@ -789,6 +825,14 @@ section {
 .icon-linkedin {
   -webkit-mask-image: url("./assets/icons/linkedin.svg");
   mask-image: url("./assets/icons/linkedin.svg");
+}
+.icon-github {
+  -webkit-mask-image: url("./assets/icons/github.svg");
+  mask-image: url("./assets/icons/github.svg");
+}
+.icon-google {
+  -webkit-mask-image: url("./assets/icons/google.svg");
+  mask-image: url("./assets/icons/google.svg");
 }
 
 /* HOVER — troca cor */

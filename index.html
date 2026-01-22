@@ -164,23 +164,28 @@
           <p>
             Desenvolvimento web + tráfego pago para negócios que querem escalar.
           </p>
-          <a href="#" class="cta-button">Orçamento no Whatsapp</a>
+          <a
+            href="https://wa.me/5538991369873?text=Quero%20realizar%20um%20orçamento%20de%20um%20site!"
+            target="_blank"
+            class="cta-button"
+            >Orçamento no Whatsapp <span class="icon icon-whatsapp"></span
+          ></a>
           <p class="global-text">
             Atendimento para clientes no Brasil 🇧🇷 e Estados Unidos 🇺🇸
           </p>
         </div>
         <div class="hero-form">
-          <form id="whatsappForm" class="form-whatsapp">
+          <form class="form-whatsapp" data-origem="cta-hero">
             <h2>Solicite um orçamento</h2>
 
             <label>
               Nome
-              <input type="text" id="nome" required placeholder="Seu nome" />
+              <input type="text" name="nome" required placeholder="Seu nome" />
             </label>
 
             <label>
               Serviço desejado
-              <select id="servico" required>
+              <select name="servico" required>
                 <option value="">Selecione</option>
                 <option>Website</option>
                 <option>Landing Page</option>
@@ -191,7 +196,7 @@
 
             <label>
               Orçamento estimado
-              <select id="orcamento" required>
+              <select name="orcamento" required>
                 <option value="">Selecione</option>
                 <option>Até R$ 1.000</option>
                 <option>R$ 1.000 – R$ 3.000</option>
@@ -201,15 +206,26 @@
             </label>
 
             <label>
+              Cidade / Estado
+              <input
+                type="text"
+                name="endereco"
+                placeholder="Ex: Belo Horizonte - MG"
+              />
+            </label>
+
+            <label>
               Mensagem
               <textarea
-                id="mensagem"
+                name="mensagem"
                 rows="4"
                 placeholder="Descreva seu projeto"
               ></textarea>
             </label>
 
-            <button type="submit">Enviar para WhatsApp</button>
+            <button type="submit">
+              Enviar para WhatsApp <span class="icon icon-whatsapp"></span>
+            </button>
           </form>
         </div>
       </section>
@@ -1017,9 +1033,10 @@
           <a
             href="https://g.page/r/CVIh9lOqXWq3EAI/review"
             target="_blank"
-            class="cta-button"
+            class="cta-button cta-google"
           >
             Ver todas as avaliações no Google
+            <span class="icon icon-google"></span>
           </a>
         </div>
       </section>
@@ -1105,17 +1122,17 @@
             Preencha o formulário abaixo e receba um atendimento direto e
             personalizado.
           </p>
-          <form id="whatsappForm" class="form-whatsapp">
+          <form class="form-whatsapp" data-origem="cta-final">
             <h2>Solicite um orçamento</h2>
 
             <label>
               Nome
-              <input type="text" id="nome" required placeholder="Seu nome" />
+              <input type="text" name="nome" required placeholder="Seu nome" />
             </label>
 
             <label>
               Serviço desejado
-              <select id="servico" required>
+              <select name="servico" required>
                 <option value="">Selecione</option>
                 <option>Website</option>
                 <option>Landing Page</option>
@@ -1126,7 +1143,7 @@
 
             <label>
               Orçamento estimado
-              <select id="orcamento" required>
+              <select name="orcamento" required>
                 <option value="">Selecione</option>
                 <option>Até R$ 1.000</option>
                 <option>R$ 1.000 – R$ 3.000</option>
@@ -1136,15 +1153,26 @@
             </label>
 
             <label>
+              Cidade / Estado
+              <input
+                type="text"
+                name="endereco"
+                placeholder="Ex: Belo Horizonte - MG"
+              />
+            </label>
+
+            <label>
               Mensagem
               <textarea
-                id="mensagem"
+                name="mensagem"
                 rows="4"
                 placeholder="Descreva seu projeto"
               ></textarea>
             </label>
 
-            <button type="submit">Enviar para WhatsApp</button>
+            <button type="submit">
+              Enviar para WhatsApp <span class="icon icon-whatsapp"></span>
+            </button>
           </form>
         </div>
       </section>
@@ -1176,10 +1204,14 @@
             <h4>Redes sociais</h4>
 
             <div class="social-icons">
+              <!--
               <a href="https://instagram.com/clintin_dos_sites" target="_blank">
                 <span class="icon icon-whatsapp"></span>
               </a>
-
+              -->
+              <a href="https://github.com/Domclinton1" target="_blank">
+                <span class="icon icon-github"></span>
+              </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61576133499522"
                 target="_blank"
