@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Básico -->
+    <title>Clintin dos Sites | Desenvolvimento Web, Apps e Tráfego Pago</title>
+
+    <meta
+      name="description"
+      content="Desenvolvimento de sites, landing pages, sistemas web, apps e gestão de tráfego pago. Atendendo Belo Horizonte e todo o Brasil com soluções digitais profissionais."
+    />
+
+    <meta
+      name="keywords"
+      content="desenvolvimento web, criação de sites, landing pages, tráfego pago, desenvolvedor front-end, desenvolvedor back-end, desenvolvedor de aplicativos web, marketing digital, programador em Belo Horizonte, programador de aplicativos, programador de sites"
+    />
+
+    <meta name="author" content="Clintin dos Sites" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- SEO Local -->
+    <meta name="geo.region" content="BR-MG" />
+    <meta name="geo.placename" content="Belo Horizonte" />
+    <meta name="geo.position" content="-19.916681;-43.934493" />
+    <meta name="ICBM" content="-19.916681, -43.934493" />
+
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph (WhatsApp / Facebook) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Clintin dos Sites | Desenvolvimento Web e Tráfego Pago"
+    />
+    <meta
+      property="og:description"
+      content="Sites, landing pages, sistemas e tráfego pago para empresas que querem crescer no digital. Atendimento em BH e todo o Brasil."
+    />
+    <meta property="og:url" content="https://www.clintindossites.com.br" />
+    <meta
+      property="og:image"
+      content="https://www.clintindossites.com.br/assets/icons/logo-clintin-dos-sites.png"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Clintin dos Sites | Desenvolvedor Full Stack e Gestor de Tráfego Pago em BH"
+    />
+    <meta
+      name="twitter:description"
+      content="Criação de sites, apps e gestão de tráfego pago para negócios que querem escalar."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.clintindossites.com.br/assets/logo.svg"
+    />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.clintindossites.com.br" />
+
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../assets/icons/logo.svg"
+      type="image/x-icon"
+    />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1253175769645630");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1253175769645630&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3P5VRB3EH9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-3P5VRB3EH9");
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a href="#" class="logo">
+          <img
+            src="../../assets/icons/logo.svg"
+            alt="Logomarca de Clintin dos Sites"
+          />
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Menu Mobile / Desktop -->
+    <nav class="nav" id="nav">
+      <a href="#servicos">Serviços</a>
+      <a href="#trafego">Tráfego Pago</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+      <a href="#oferta" class="btn-oferta">Oferta Limitada</a>
+    </nav>
+
+    <main>
+      <section class="hero" id="trafego">
+        <div class="hero-text">
+          <h1>
+            Gestão de Tráfego Pago para gerar clientes todos os dias para o seu
+            negócio
+          </h1>
+          <p>
+            Criamos campanhas estratégicas no Google e redes sociais para
+            aumentar suas vendas, leads e faturamento.
+          </p>
+
+          <a
+            href="https://wa.me/5538991369873?text=Quero%20contratar%20gest%C3%A3o%20de%20tr%C3%A1fego%20pago!"
+            target="_blank"
+            class="cta-button"
+          >
+            Quero atrair clientes agora <span class="icon icon-whatsapp"></span>
+          </a>
+
+          <p class="global-text">
+            Estratégias validadas para negócios locais, e-commerce e serviços 🇧🇷
+          </p>
+        </div>
+
+        <div class="hero-form">
+          <!-- mantém seu formulário -->
+        </div>
+      </section>
+
+      <section class="como-funciona" id="como-funciona">
+        <div class="container">
+          <h2 class="text-metal">Como funciona o Tráfego Pago</h2>
+          <p class="subtitulo">
+            Um processo simples, transparente e focado em resultados
+          </p>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <h3>1. Planejamento estratégico</h3>
+              <p>
+                Analisamos seu negócio, público ideal e objetivo para criar
+                campanhas que realmente convertem.
+              </p>
+            </div>
+
+            <div class="step-card">
+              <h3>2. Setup completo da campanha</h3>
+              <p>
+                Criamos toda a estrutura de anúncios no Google e/ou redes
+                sociais, com segmentação profissional.
+              </p>
+            </div>
+
+            <div class="step-card">
+              <h3>3. Campanhas rodando</h3>
+              <p>
+                Os anúncios começam a gerar visitas, leads e vendas para o seu
+                negócio.
+              </p>
+            </div>
+
+            <div class="step-card">
+              <h3>4. Otimização contínua</h3>
+              <p>
+                Ajustamos os anúncios constantemente para melhorar os resultados
+                e reduzir custos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="servicos" id="servicos">
+        <div class="container">
+          <h3 class="text-metal">Tráfego Pago Estratégico</h3>
+          <p>
+            Campanhas no Google, Facebook e Instagram focadas em vendas, leads e
+            crescimento constante.
+          </p>
+
+          <div class="cards-servicos">
+            <div class="card-servico">
+              <h3 class="text-metal">Websites Profissionais</h3>
+              <p>
+                Sites modernos, rápidos e responsivos, pensados para posicionar
+                sua marca e gerar credibilidade.
+              </p>
+            </div>
+
+            <div class="card-servico">
+              <h3 class="text-metal">Landing Pages</h3>
+              <p>
+                Páginas focadas em conversão, ideais para anúncios e captação de
+                leads qualificados.
+              </p>
+            </div>
+
+            <div class="card-servico">
+              <h3 class="text-metal">Aplicações Web & Apps</h3>
+              <p>
+                Sistemas e aplicações sob medida para automatizar processos e
+                escalar operações.
+              </p>
+            </div>
+
+            <div class="card-servico">
+              <h3 class="text-metal">Tráfego Pago</h3>
+              <p>
+                Gestão estratégica de anúncios no Google e redes sociais com
+                foco em resultado real.
+              </p>
+            </div>
+            <div class="card-servico">
+              <h3 class="text-metal">E-commerce (Loja Virtual)</h3>
+              <p>
+                Lojas virtuais completas, rápidas e seguras, prontas para vender
+                com integrações de pagamento, frete e automações.
+              </p>
+            </div>
+
+            <div class="card-servico">
+              <h3 class="text-metal">Automações & Integrações</h3>
+              <p>
+                Integrações inteligentes entre sistemas, formulários, WhatsApp,
+                CRMs e plataformas de pagamento para escalar processos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="planos-trafego" id="planos">
+        <div class="container">
+          <h2 class="text-metal">Planos de Tráfego Pago</h2>
+          <p class="subtitulo">Escolha o modelo ideal para o seu negócio</p>
+
+          <div class="planos-grid">
+            <div class="plano-card">
+              <h3>Setup Avulso de Campanha</h3>
+              <p class="preco">A partir de R$ 600</p>
+              <ul>
+                <li>Criação completa da campanha</li>
+                <li>Configuração de público e segmentação</li>
+                <li>Estrutura profissional de anúncios</li>
+                <li>Pronto para rodar</li>
+              </ul>
+              <p class="obs">
+                Após o setup, você pode gerenciar por conta própria.
+              </p>
+              <a
+                href="https://wa.me/5538991369873?text=Quero%20contratar%20gest%C3%A3o%20de%20tr%C3%A1fego%20pago!"
+                target="_blank"
+                class="cta-button"
+              >
+                Quero esse pacote
+                <span class="icon icon-whatsapp"></span>
+              </a>
+            </div>
+
+            <div class="plano-card destaque">
+              <h3>Plano de Gestão Mensal</h3>
+              <p class="preco">A partir de R$ 800/mês</p>
+              <ul>
+                <li>Gestão completa das campanhas</li>
+                <li>Otimizações semanais</li>
+                <li>Relatórios de desempenho</li>
+                <li>Suporte contínuo</li>
+              </ul>
+              <p class="obs">
+                Valor varia conforme volume de anúncios e plataformas.
+              </p>
+              <a
+                href="https://wa.me/5538991369873?text=Quero%20contratar%20gest%C3%A3o%20de%20tr%C3%A1fego%20pago!"
+                target="_blank"
+                class="cta-button"
+              >
+                Quero plano mensal
+                <span class="icon icon-whatsapp"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="resultados">
+        <div class="container">
+          <h2 class="text-metal">Resultados com Tráfego Pago</h2>
+          <p class="subtitulo">
+            Resultados reais gerados para clientes através de anúncios online
+          </p>
+
+          <div class="portfolio-row">
+            <h3 class="row-title">Campanhas no Meta Ads</h3>
+
+            <div class="portfolio-scroll">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/meta_ads_bnesquadrias.webp"
+                    alt="Resultado tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/meta_ads_gmglass.webp"
+                    alt="Resultado anúncios online"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/meta_ads_hreletronicos.webp"
+                    alt="Leads gerados com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/meta_ads_clintin_dos_sites.webp"
+                    alt="Vendas com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/meta_ads_newform.webp"
+                    alt="Vendas com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/meta_ads_pizzaria_prazeres_da_massa.webp"
+                    alt="Vendas com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/meta_ads_telecom.webp"
+                    alt="Vendas com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/meta_ads_telecom2.webp"
+                    alt="Vendas com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/meta_ads_telecom2.webp"
+                    alt="Vendas com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/meta_ads_telecom3.webp"
+                    alt="Vendas com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/meta_ads_vidrosa.webp"
+                    alt="Vendas com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-row">
+            <h3 class="row-title">Campanhas no Google ADS</h3>
+
+            <div class="portfolio-scroll">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/google_ads_bnesquadrias.webp"
+                    alt="Resultado tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/google_ads_jcesquadrias.webp"
+                    alt="Resultado anúncios online"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/google_ads_wmaesquadrias.webp"
+                    alt="Leads gerados com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/google_ads_newfom.webp"
+                    alt="Vendas com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+
+              <div class="portfolio-item">
+                <div class="portfolio-image">
+                  <img
+                    src="../../assets/images/google_ads_ vidrosa.webp"
+                    alt="Vendas com tráfego pago"
+                  />
+                </div>
+                <div class="portfolio-overlay" onclick="abrirResultado(this)">
+                  <span>Ver resultado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="oferta" id="oferta">
+        <div class="container">
+          <div class="oferta-box">
+            <span class="oferta-badge">Oferta Limitada</span>
+
+            <h2>Condições Especiais para Prestadores de Serviços</h2>
+
+            <p>
+              Criação de sites e landing pages profissionais com foco em
+              conversão, performance e presença digital para construtores,
+              vidraceiros, serralheiros, pintores e etc.
+            </p>
+
+            <p class="oferta-alerta">
+              Vagas limitadas para manter a qualidade e o suporte personalizado.
+            </p>
+
+            <a href="./pages/oferta-limitada.html" class="btn-oferta">
+              Ver Oferta Completa
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="avaliacoes">
+        <div class="container">
+          <h2 class="text-metal">Avaliações no Google</h2>
+          <p class="subtitulo">
+            O que nossos clientes dizem sobre nossos serviços
+          </p>
+
+          <div class="reviews-grid">
+            <div class="review-card">
+              <div class="review-header">
+                <img
+                  src="../../assets/images/logo-bn-esquadrias-2.jpeg"
+                  alt="Cliente"
+                />
+                <div>
+                  <strong>BN Esquadrias</strong>
+                  <span>2 semanas atrás</span>
+                </div>
+              </div>
+
+              <div class="review-stars">★★★★★</div>
+
+              <p class="review-text">
+                Um dos melhores profissionais na área de programação e gestor de
+                tráfego pago. Eu tenho uma loja de esquadrias de alumínio e eu
+                posso dizer que as vendas da minha loja aumentaram 1000% desde
+                que eu encontrei o Clintin através de uma indicação. Atendimento
+                incrível, super explicativo, trabalho impecável o site da loja
+                ficou maravilhoso, só tenho a agradecer! Valorizem os
+                programadores pessoal, é um trabalho cansativo mentalmente...
+                Obrigada Clintin por tudo que você tem feito por mim e pela
+                minha empresa desde o início, você é 10! ❤️❤️
+              </p>
+            </div>
+
+            <div class="review-card">
+              <div class="review-header">
+                <img
+                  src="../../assets/images/review-larissa.png"
+                  alt="Cliente"
+                />
+                <div>
+                  <strong>Larissa Kelly</strong>
+                  <span>1 mês atrás</span>
+                </div>
+              </div>
+
+              <div class="review-stars">★★★★★</div>
+
+              <p class="review-text">
+                Foi uma experiência impecável. É um profissional extremamente
+                comprometido, inteligente e dedicado. Entrega tudo com
+                excelência, tem uma visão técnica muito acima da média e sempre
+                busca soluções práticas e criativas para qualquer desafio. Além
+                do domínio técnico, o que mais me impressiona é a
+                responsabilidade, a agilidade e a clareza na comunicação. Ele
+                realmente se importa com o cliente e faz de tudo para garantir
+                um resultado final de qualidade. Recomendo de olhos fechados. É
+                raro encontrar alguém tão competente e confiável na área de
+                desenvolvimento de sites, galera!
+              </p>
+            </div>
+
+            <div class="review-card">
+              <div class="review-header">
+                <img
+                  src="../../assets/images/review-jhessi.png"
+                  alt="Cliente"
+                />
+                <div>
+                  <strong>Jhessii Moura</strong>
+                  <span>Há alguns dias atrás</span>
+                </div>
+              </div>
+
+              <div class="review-stars">★★★★★</div>
+
+              <p class="review-text">
+                Sou cliente e Recomendo muito , ja contratei vários serviços,
+                site , trafego pago , designer grafico e amei todas as
+                experiências, voltarei sempre 🚀✅️👏❤️
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="https://g.page/r/CVIh9lOqXWq3EAI/review"
+            target="_blank"
+            class="cta-button cta-google"
+          >
+            Ver todas as avaliações no Google
+            <span class="icon icon-google"></span>
+          </a>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="container">
+          <h2 class="text-metal">Perguntas Frequentes sobre Tráfego Pago</h2>
+          <p class="subtitulo">
+            Tudo que você precisa saber antes de investir em anúncios
+          </p>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question">
+                Como funciona o tráfego pago?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Criamos anúncios estratégicos no Google e redes sociais para
+                  atrair pessoas interessadas no seu produto ou serviço, gerando
+                  visitas, contatos e vendas.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Quanto custa investir em tráfego pago?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  O setup completo da campanha custa R$ 600. Já a gestão mensal
+                  começa a partir de R$ 800, variando conforme o volume de
+                  anúncios e objetivos do cliente.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                O valor dos anúncios está incluso?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Não. O investimento em anúncios é pago diretamente às
+                  plataformas (Google, Meta Ads) e é separado da nossa taxa de
+                  serviço.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Em quanto tempo começo a ter resultados?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Normalmente os primeiros resultados aparecem nos primeiros
+                  dias, e as campanhas vão melhorando com as otimizações
+                  contínuas.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Posso contratar só o setup?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Sim! Você pode contratar apenas o setup por R$ 600 e gerenciar
+                  as campanhas por conta própria, sem mensalidade.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-final" id="contato">
+        <div class="container">
+          <h2 class="text-metal">Vamos tirar seu projeto do papel?</h2>
+
+          <p class="cta-text">
+            Preencha o formulário abaixo e receba um atendimento direto e
+            personalizado.
+          </p>
+          <form class="form-whatsapp" data-origem="cta-final">
+            <h2>Solicite um orçamento</h2>
+
+            <label>
+              Nome
+              <input type="text" name="nome" required placeholder="Seu nome" />
+            </label>
+
+            <label>
+              Serviço desejado
+              <select name="servico" required>
+                <option value="">Selecione</option>
+                <option>Website</option>
+                <option>Landing Page</option>
+                <option>App Mobile</option>
+                <option>Tráfego Pago</option>
+              </select>
+            </label>
+
+            <label>
+              Orçamento estimado
+              <select name="orcamento" required>
+                <option value="">Selecione</option>
+                <option>Até R$ 1.000</option>
+                <option>R$ 1.000 – R$ 3.000</option>
+                <option>R$ 3.000 – R$ 5.000</option>
+                <option>Acima de R$ 5.000</option>
+              </select>
+            </label>
+
+            <label>
+              Cidade / Estado
+              <input
+                type="text"
+                name="endereco"
+                placeholder="Ex: Belo Horizonte - MG"
+              />
+            </label>
+
+            <label>
+              Mensagem
+              <textarea
+                name="mensagem"
+                rows="4"
+                placeholder="Descreva seu projeto"
+              ></textarea>
+            </label>
+
+            <button type="submit">
+              Enviar para WhatsApp <span class="icon icon-whatsapp"></span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h3 class="text-metal">Clintin dos Sites</h3>
+            <p>
+              Desenvolvimento de sites, landing pages, e-commerce, aplicativos e
+              tráfego pago.
+            </p>
+
+            <span class="global-badge">
+              🌎 Atendemos Brasil e Estados Unidos
+            </span>
+          </div>
+
+          <div class="footer-links">
+            <h4>Contato</h4>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#avaliacoes">Avaliações</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contato">Orçamento</a>
+          </div>
+
+          <div class="footer-social">
+            <h4>Redes sociais</h4>
+
+            <div class="social-icons">
+              <!--
+              <a href="https://instagram.com/clintin_dos_sites" target="_blank">
+                <span class="icon icon-whatsapp"></span>
+              </a>
+              -->
+              <a href="https://github.com/Domclinton1" target="_blank">
+                <span class="icon icon-github"></span>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61576133499522"
+                target="_blank"
+              >
+                <span class="icon icon-facebook"></span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/clintin-dos-sites/"
+                target="_blank"
+              >
+                <span class="icon icon-linkedin"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Clintin dos Sites. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-resultado" id="modalResultado">
+      <span class="fechar-resultado" onclick="fecharResultado()">×</span>
+      <img id="imgResultado" src="" alt="Resultado ampliado" />
+    </div>
+
+    <a
+      href="https://wa.me/5538991369873?text=Quero%20realizar%20um%20orçamento%20de%20um%20trafego pago!"
+      class="btn-whatsapp"
+      target="_blank"
+    >
+      <img src="../../assets/icons/whatssapp-2.svg" alt="Botão whatsapp" />
+      <span class="tooltip-text">Fale comigo no WhatsApp</span>
+    </a>
+
+    <script src="../../script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var botao = document.getElementsByClassName("cta-button");
+        if (botao) {
+          botao.addEventListener("click", function () {
+            // 🔹 Evento personalizado para o Pixel
+            fbq("trackCustom", "ChamouNoWhats");
+            console.log("Evento Chamou no Whats disparado!");
+          });
+        }
+      });
+    </script>
+    <script>
+      function abrirResultado(elemento) {
+        const imagem = elemento.parentElement.querySelector("img").src;
+
+        const modal = document.getElementById("modalResultado");
+        const imgModal = document.getElementById("imgResultado");
+
+        imgModal.src = imagem;
+        modal.classList.add("ativo");
+      }
+
+      function fecharResultado() {
+        document.getElementById("modalResultado").classList.remove("ativo");
+      }
+    </script>
+  </body>
+</html>
