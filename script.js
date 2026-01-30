@@ -1,20 +1,52 @@
-// Formulário WhatsApp (suporta múltiplos forms)
 document.querySelectorAll(".form-whatsapp").forEach((form) => {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const nome = form.querySelector('[name="nome"]').value;
-    const servico = form.querySelector('[name="servico"]').value;
-    const orcamento = form.querySelector('[name="orcamento"]').value;
-    const mensagem = form.querySelector('[name="mensagem"]').value;
+    // Campos básicos
+    const nome = form.querySelector('[name="nome"]')?.value || "";
+    const whatsapp = form.querySelector('[name="whatsapp"]')?.value || "";
+
+    // Campos antigos
+    const servico = form.querySelector('[name="servico"]')?.value || "";
+    const orcamento = form.querySelector('[name="orcamento"]')?.value || "";
     const endereco = form.querySelector('[name="endereco"]')?.value || "";
+    const mensagem = form.querySelector('[name="mensagem"]')?.value || "";
+
+    // Campos novos (tráfego pago)
+    const tipoNegocio =
+      form.querySelector('[name="tipo-negocio"]')?.value || "";
+    const jaAnuncia = form.querySelector('[name="ja-anuncia"]')?.value || "";
+    const investimento =
+      form.querySelector('[name="investimento"]')?.value || "";
 
     const origem = form.dataset.origem || "Site";
 
     let texto = `📍 Origem: ${origem}%0A`;
     texto += `👤 Nome: ${nome}%0A`;
-    texto += `🛠 Serviço: ${servico}%0A`;
-    texto += `💰 Orçamento: ${orcamento}%0A`;
+
+    if (whatsapp) {
+      texto += `📞 WhatsApp: ${whatsapp}%0A`;
+    }
+
+    if (servico) {
+      texto += `🛠 Serviço: ${servico}%0A`;
+    }
+
+    if (tipoNegocio) {
+      texto += `🏢 Tipo de negócio: ${tipoNegocio}%0A`;
+    }
+
+    if (jaAnuncia) {
+      texto += `📢 Já anuncia: ${jaAnuncia}%0A`;
+    }
+
+    if (orcamento) {
+      texto += `💰 Orçamento estimado: ${orcamento}%0A`;
+    }
+
+    if (investimento) {
+      texto += `💸 Investimento mensal em anúncios: ${investimento}%0A`;
+    }
 
     if (endereco) {
       texto += `🌍 Local: ${endereco}%0A`;
@@ -28,16 +60,15 @@ document.querySelectorAll(".form-whatsapp").forEach((form) => {
 
     window.open(url, "_blank");
 
-    /* Google Analytics Event */
+    // Evento Google Analytics (se existir)
     if (typeof gtag === "function") {
       gtag("event", "lead_whatsapp", {
         origem: origem,
-        servico: servico,
+        tipo_negocio: tipoNegocio || servico || "nao_informado",
       });
     }
   });
 });
-
 //carrossel netflix
 function abrirProjeto(imagem) {
   document.getElementById("imagemProjeto").src = imagem;
