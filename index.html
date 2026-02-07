@@ -43,7 +43,7 @@
     <meta property="og:url" content="https://www.clintindossites.com.br" />
     <meta
       property="og:image"
-      content="https://www.clintindossites.com.br/assets/icons/logo-clintin-dos-sites.png"
+      content="https://www.clintindossites.com.br/assets/icons/logo-3d-background.png"
     />
 
     <!-- Twitter -->
@@ -58,7 +58,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.clintindossites.com.br/assets/og-image.jpg"
+      content="https://www.clintindossites.com.br/assets/icons/logo-3d-background.png"
     />
 
     <!-- Canonical -->
@@ -126,6 +126,24 @@
 
       gtag("config", "G-3P5VRB3EH9");
     </script>
+    <!-- Google tag (gtag.js) event - delayed navigation helper -->
+    <script>
+      // Helper function to delay opening a URL until a gtag event is sent.
+      // Call it in response to an action that should navigate to a URL.
+      function gtagSendEvent(url) {
+        var callback = function () {
+          if (typeof url === "string") {
+            window.location = url;
+          }
+        };
+        gtag("event", "manual_event_CONTACT", {
+          event_callback: callback,
+          event_timeout: 2000,
+          // <event_parameters>
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     <header class="header">
@@ -168,6 +186,7 @@
             href="https://wa.me/5538991369873?text=Quero%20realizar%20um%20orçamento%20de%20um%20site!"
             target="_blank"
             class="cta-button"
+            onclick="gtag_report_conversion()"
             >Orçamento no Whatsapp <span class="icon icon-whatsapp"></span
           ></a>
           <p class="global-text">
@@ -949,17 +968,21 @@
 
             <h2>Condições Especiais para Prestadores de Serviços</h2>
 
-            <p>
+            <p class="subtitulo">
               Criação de sites e landing pages profissionais com foco em
               conversão, performance e presença digital para construtores,
               vidraceiros, serralheiros, pintores e etc.
             </p>
 
-            <p class="oferta-alerta">
+            <p class="oferta-alerta" style="text-transform: uppercase">
               Vagas limitadas para manter a qualidade e o suporte personalizado.
             </p>
 
-            <a href="./pages/oferta-limitada.html" class="btn-oferta">
+            <a
+              href="./pages/oferta-vidracaria/index.html"
+              class="cta-button"
+              style="margin: 10px auto"
+            >
               Ver Oferta Completa
             </a>
           </div>
