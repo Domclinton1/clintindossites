@@ -94,18 +94,3 @@ document.querySelectorAll(".faq-question").forEach((button) => {
     item.classList.toggle("active");
   });
 });
-
-//menu mobile
-const toggle = document.getElementById("menuToggle");
-const nav = document.getElementById("nav");
-const overlay = document.getElementById("menuOverlay");
-
-toggle.addEventListener("click", () => {
-  nav.classList.add("active");
-  overlay.classList.add("active");
-});
-
-overlay.addEventListener("click", () => {
-  nav.classList.remove("active");
-  overlay.classList.remove("active");
-});

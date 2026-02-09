@@ -128,32 +128,7 @@
     </script>
   </head>
   <body>
-    <header class="header">
-      <div class="header-container">
-        <a href="#" class="logo">
-          <img
-            src="../../assets/icons/logo.svg"
-            alt="Logomarca de Clintin dos Sites"
-          />
-        </a>
-
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-          ☰
-        </button>
-      </div>
-    </header>
-
-    <!-- Overlay -->
-    <div class="menu-overlay" id="menuOverlay"></div>
-
-    <!-- Menu Mobile / Desktop -->
-    <nav class="nav" id="nav">
-      <a href="#servicos">Serviços</a>
-      <a href="#trafego">Tráfego Pago</a>
-      <a href="#portfolio">Portfólio</a>
-      <a href="#contato">Contato</a>
-      <a href="#oferta" class="btn-oferta">Oferta Limitada</a>
-    </nav>
+    <div id="header"></div>
 
     <main>
       <section class="hero" id="trafego">
@@ -854,63 +829,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <div class="footer-brand">
-            <h3 class="text-metal">Clintin dos Sites</h3>
-            <p>
-              Desenvolvimento de sites, landing pages, e-commerce, aplicativos e
-              tráfego pago.
-            </p>
-
-            <span class="global-badge">
-              🌎 Atendemos Brasil e Estados Unidos
-            </span>
-          </div>
-
-          <div class="footer-links">
-            <h4>Contato</h4>
-            <a href="#portfolio">Portfólio</a>
-            <a href="#avaliacoes">Avaliações</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contato">Orçamento</a>
-          </div>
-
-          <div class="footer-social">
-            <h4>Redes sociais</h4>
-
-            <div class="social-icons">
-              <!--
-              <a href="https://instagram.com/clintin_dos_sites" target="_blank">
-                <span class="icon icon-whatsapp"></span>
-              </a>
-              -->
-              <a href="https://github.com/Domclinton1" target="_blank">
-                <span class="icon icon-github"></span>
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=61576133499522"
-                target="_blank"
-              >
-                <span class="icon icon-facebook"></span>
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/clintin-dos-sites/"
-                target="_blank"
-              >
-                <span class="icon icon-linkedin"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>© 2026 Clintin dos Sites. Todos os direitos reservados.</p>
-        </div>
-      </div>
-    </footer>
+    <div id="footer"></div>
     <div class="modal-resultado" id="modalResultado">
       <span class="fechar-resultado" onclick="fecharResultado()">×</span>
       <img id="imgResultado" src="" alt="Resultado ampliado" />
@@ -952,6 +871,25 @@
       function fecharResultado() {
         document.getElementById("modalResultado").classList.remove("ativo");
       }
+    </script>
+    <script>
+      fetch("/components/header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+
+          // ⚠️ IMPORTANTE: carrega o JS APÓS inserir o header
+          const script = document.createElement("script");
+          script.src = "/js/header.js";
+          document.body.appendChild(script);
+        });
+    </script>
+    <script>
+      fetch("/components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer").innerHTML = html;
+        });
     </script>
   </body>
 </html>
