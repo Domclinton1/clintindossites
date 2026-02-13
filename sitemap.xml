@@ -8,9 +8,19 @@
 
 
 <url>
-  <loc>https://www.jcesquadriasmg.com.br/</loc>
-  <lastmod>2026-02-12T23:57:49+00:00</lastmod>
+  <loc>https://www.clintindossites.com.br/</loc>
+  <lastmod>2026-02-13T03:51:40+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
-
+<url>
+  <loc>https://www.clintindossites.com.br/pages/oferta-vidracaria/index.html</loc>
+  <lastmod>2026-02-13T03:51:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clintindossites.com.br/pages/trafego-pago/index.html</loc>
+  <lastmod>2026-02-13T03:51:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
