@@ -21,39 +21,39 @@ document.querySelectorAll(".form-whatsapp").forEach((form) => {
 
     const origem = form.dataset.origem || "Site";
 
-    let texto = `📍 Origem: ${origem}%0A`;
-    texto += `👤 Nome: ${nome}%0A`;
+    let texto = `Origem: ${origem}%0A`;
+    texto += `Nome: ${nome}%0A`;
 
     if (whatsapp) {
-      texto += `📞 WhatsApp: ${whatsapp}%0A`;
+      texto += `WhatsApp: ${whatsapp}%0A`;
     }
 
     if (servico) {
-      texto += `🛠 Serviço: ${servico}%0A`;
+      texto += `Serviço: ${servico}%0A`;
     }
 
     if (tipoNegocio) {
-      texto += `🏢 Tipo de negócio: ${tipoNegocio}%0A`;
+      texto += `Tipo de negócio: ${tipoNegocio}%0A`;
     }
 
     if (jaAnuncia) {
-      texto += `📢 Já anuncia: ${jaAnuncia}%0A`;
+      texto += `Já anuncia: ${jaAnuncia}%0A`;
     }
 
     if (orcamento) {
-      texto += `💰 Orçamento estimado: ${orcamento}%0A`;
+      texto += `Orçamento estimado: ${orcamento}%0A`;
     }
 
     if (investimento) {
-      texto += `💸 Investimento mensal em anúncios: ${investimento}%0A`;
+      texto += `Investimento mensal em anúncios: ${investimento}%0A`;
     }
 
     if (endereco) {
-      texto += `🌍 Local: ${endereco}%0A`;
+      texto += `Local: ${endereco}%0A`;
     }
 
     if (mensagem) {
-      texto += `💬 Mensagem: ${mensagem}`;
+      texto += `Mensagem: ${mensagem}`;
     }
 
     const url = `https://wa.me/5531994038782?text=${texto}`;
